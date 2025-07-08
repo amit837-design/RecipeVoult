@@ -155,12 +155,12 @@ const MainBody = () => {
     tab === "all" ? recipes : recipes.filter((r) => r.favourite === true);
 
   return (
-    <div className="min-h-screen bg-black text-white px-4 md:px-8 pt-28 pb-6">
+    <div className="min-h-screen bg-black text-white px-4 md:px-8 pt-18 pb-6">
       {/* header */}
       {CustomHeader({ onAddClick: () => setShowModal(true) })}
 
       {/* tabs */}
-      <div className="inline-flex rounded mb-6 bg-zinc-900 p-1 sticky top-15">
+      <div className="inline-flex rounded mb-6 p-1 sticky top-15 backdrop-blur bg-zinc-900/60 shadow-md border border-white/10">
         {["all", "favourites"].map((t) => (
           <button
             key={t}
