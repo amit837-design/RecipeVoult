@@ -190,14 +190,15 @@ const MainBody = () => {
       </MasonryGrid>
 
       {showModal && (
-        <addRecipe
-          onClose={() => setShowModal(false)}
-          onSave={(data) => {
-            addRecipe(data);
-            setShowModal(false);
-          }}
-        />
-      )}
+  <Addracipe
+    onClose={() => setShowModal(false)}
+    onSave={(data) => {
+      addRecipe(data);
+      setShowModal(false);
+    }}
+  />
+)}
+
     </div>
   );
 };
